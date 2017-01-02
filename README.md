@@ -12,3 +12,9 @@ docker run -d --name="home-assistant" -v /path/to/your/config:/config -v /etc/lo
 ```
 
 I recommend setting up an alias for your zwave device as documented [here](http://hintshop.ludvig.co.nz/show/persistent-names-usb-serial-devices/).
+
+## Building
+Replace the name/tag below for your needs:
+```
+docker build -t blakeblackshear/rpi-home-assistant:0.35.3 .
+```
