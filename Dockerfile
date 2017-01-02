@@ -11,7 +11,8 @@ RUN echo "deb http://download.telldus.com/debian/ stable main" >> /etc/apt/sourc
     wget -qO - http://download.telldus.se/debian/telldus-public.key | apt-key add -
 
 # Install some packages
-RUN apt-get install -y --no-install-recommends wget nmap net-tools cython3 libudev-dev \
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends wget nmap net-tools cython3 libudev-dev \
             sudo libglib2.0-dev bluetooth libbluetooth-dev git \
             libtelldus-core2 libffi-dev libjpeg-dev libmysqlclient-dev
 
