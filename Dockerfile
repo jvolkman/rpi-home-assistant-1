@@ -13,7 +13,7 @@ RUN echo "deb http://download.telldus.com/debian/ stable main" >> /etc/apt/sourc
 # Install some packages
 RUN apt-get update && \
     apt-get install -y --no-install-recommends wget nmap net-tools cython3 libudev-dev \
-            sudo libglib2.0-dev bluetooth libbluetooth-dev git \
+            sudo libglib2.0-dev bluetooth libbluetooth-dev git libpq-dev\
             libtelldus-core2 libffi-dev libjpeg-dev libmysqlclient-dev
 
 # Install openzwave
