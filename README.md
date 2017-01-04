@@ -1,5 +1,5 @@
-[![blakeblackshear/rpi-home-assistant](https://img.shields.io/docker/stars/blakeblackshear/rpi-home-assistant.svg) ![blakeblackshear/rpi-home-assistant](https://img.shields.io/docker/pulls/blakeblackshear/rpi-home-assistant.svg)
-]((https://hub.docker.com/r/blakeblackshear/rpi-home-assistant/))
+[![blakeblackshear/rpi-home-assistant](https://img.shields.io/docker/stars/blakeblackshear/rpi-home-assistant.svg)](https://hub.docker.com/r/blakeblackshear/rpi-home-assistant/)
+[![blakeblackshear/rpi-home-assistant](https://img.shields.io/docker/pulls/blakeblackshear/rpi-home-assistant.svg)](https://hub.docker.com/r/blakeblackshear/rpi-home-assistant/)
 
 # Docker image for Home Assistant on the Raspberry Pi
 This build is designed to follow the official docker container as closely as
