@@ -8,7 +8,7 @@ when I can.
 ## Running
 You will need to share your zwave device with the container with `--device`:
 ```
-docker run -d --name="home-assistant" -v /path/to/your/config:/config -v /etc/localtime:/etc/localtime:ro --net=host --device=/dev/zwave blakeblackshear/rpi-home-assistant:0.35.3
+docker run -d --name="home-assistant" -v /path/to/your/config:/config -v /etc/localtime:/etc/localtime:ro --net=host --device=/dev/zwave blakeblackshear/rpi-home-assistant:0.36.1
 ```
 
 I recommend setting up an alias for your zwave device as documented [here](http://hintshop.ludvig.co.nz/show/persistent-names-usb-serial-devices/).
@@ -16,5 +16,5 @@ I recommend setting up an alias for your zwave device as documented [here](http:
 ## Building
 Replace the name/tag below for your needs:
 ```
-docker build -t blakeblackshear/rpi-home-assistant:0.35.3 .
+docker build -t blakeblackshear/rpi-home-assistant:0.36.1 .
 ```
