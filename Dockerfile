@@ -14,13 +14,15 @@ WORKDIR /usr/src/app
 # Install some packages
 RUN apt-get update && \
     apt-get install -y --no-install-recommends wget sudo git libpq-dev \
-            libffi-dev libjpeg-dev libmysqlclient-dev
+            libffi-dev libjpeg-dev libmysqlclient-dev python3-dev
 
 ADD https://raw.githubusercontent.com/home-assistant/home-assistant/${HA_VERSION}/script/setup_docker_prereqs script/setup_docker_prereqs
 ADD https://raw.githubusercontent.com/home-assistant/home-assistant/${HA_VERSION}/script/build_python_openzwave script/build_python_openzwave
 ADD https://raw.githubusercontent.com/home-assistant/home-assistant/${HA_VERSION}/script/build_libcec script/build_libcec
 
 RUN chmod +x script/setup_docker_prereqs && \
+    chmod +x script/build_python_openzwave && \
+    chmod +x script/build_libcec && \
     script/setup_docker_prereqs
 
 RUN mkdir -p /usr/local/share/python-openzwave && \
