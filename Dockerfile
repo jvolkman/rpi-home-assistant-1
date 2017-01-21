@@ -14,7 +14,7 @@ WORKDIR /usr/src/app
 # Install some packages
 RUN apt-get update && \
     apt-get install -y --no-install-recommends wget sudo git libpq-dev \
-            libffi-dev libjpeg-dev libmysqlclient-dev python3-dev
+            libffi-dev libjpeg-dev libmysqlclient-dev libxml2-dev libxslt-dev
 
 ADD https://raw.githubusercontent.com/home-assistant/home-assistant/${HA_VERSION}/script/setup_docker_prereqs script/setup_docker_prereqs
 ADD https://raw.githubusercontent.com/home-assistant/home-assistant/${HA_VERSION}/script/build_python_openzwave script/build_python_openzwave
